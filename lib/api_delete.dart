@@ -10,7 +10,7 @@ apiDelete(
   String? successMessage,
   String? errorMessage,
 }) async {
-  String baseUrl = await Api.getBaseUrl();
+  String baseUrl = await BaissApi.getBaseUrl();
   var dio = Dio();
 
   try {

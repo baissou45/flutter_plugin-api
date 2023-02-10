@@ -13,7 +13,7 @@ apiGet(
   final data = await json.decode(response);
 
   var dio = Dio();
-  String baseUrl = await Api.getBaseUrl();
+  String baseUrl = await BaissApi.getBaseUrl();
 
   try {
     dio.options.connectTimeout = 10000;

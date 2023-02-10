@@ -9,7 +9,7 @@ part 'api_get.dart';
 part 'api_post.dart';
 part 'api_delete.dart';
 
-class Api {
+class BaissApi {
   static getBaseUrl() async {
     final String response = await rootBundle.loadString('env.json');
     final data = await json.decode(response);
